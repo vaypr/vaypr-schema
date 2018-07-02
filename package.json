@@ -1,0 +1,30 @@
+{
+  "name": "vapr-validator",
+  "version": "1.0.0",
+  "description": "The validation engine of vaypr",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vaypr/vaypr-validator.git"
+  },
+  "keywords": [
+    "vaypr"
+  ],
+  "author": "Chris Pawlukiewicz <hi@paynoattn.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/vaypr/vaypr-validator/issues"
+  },
+  "homepage": "https://github.com/vaypr/vaypr-validator#readme",
+  "devDependencies": {
+    "@types/joi": "^13.3.0",
+    "mocha": "^5.2.0",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "joi": "^13.4.0"
+  }
+}
