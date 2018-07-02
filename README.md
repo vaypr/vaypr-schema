@@ -7,15 +7,19 @@ Tired of creating a class with name properties, then creating a joi validator, a
 
 ## example
 ```
+immport { VayprModel, Unique, String, Required, Min, Max } from 'vaypr-validator';
+
 const vayprOptions = {
   graphql: false,
   orm: 'sequelize',
   factoryFunction: (...args) => ({...args})
 }
+
 @VayprModel(vayprOptions)
 export class MyClass {
   @String
   @Required
+  @Unique
   @Min(5)
   @Max(32)
   foo: string;
