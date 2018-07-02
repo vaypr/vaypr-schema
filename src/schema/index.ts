@@ -1,1 +1,2 @@
-export * from './schema';
+export * from './schema.class';
+export * from './schema.decorator';

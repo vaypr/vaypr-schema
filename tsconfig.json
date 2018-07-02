@@ -11,6 +11,9 @@
     "target": "esnext",
     "typeRoots": [
       "./node_modules/@types"
+    ],
+    "files": [
+      "src/main.ts"
     ]
   }
 }

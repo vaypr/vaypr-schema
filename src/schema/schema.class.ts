@@ -1,5 +1,5 @@
 import { VayprFactory } from '../misc';
-import { VayprValidator } from './validator';
+import { VayprJoiValidator } from '../validators';
 
 export abstract class VayprSchema<T> {
   // a factory function for creating new items for this schema.
@@ -9,15 +9,9 @@ export abstract class VayprSchema<T> {
   // graphql types
   public graphqlTypes;
   // validator
-  public validator: VayprValidator<T>;
-  
-  constructor() {
-    this.validator = new VayprValidator()
-
-  }
+  public validator: VayprJoiValidator<T>;
 
   public isValid(value: T) {
     return this.validator.isValid(value);
   }
-
 }
