@@ -1,1 +1,1 @@
-export * from './string.validator';
+export * from './string.decorator';
